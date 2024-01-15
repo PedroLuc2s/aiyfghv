@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&family=Open+Sans:ital,wght@1,300&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&display=swap');
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: 'Inter',sans-serif;
+        }
+        .full-screen {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
+            gap: 10px;
+
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 100vh;
+            background: linear-gradient(45deg,rgb(171, 126, 255),rgb(107, 54, 255));
+        }
+        .conteiners {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 900px;
+            height: 30pc;
+            border-radius: 20px;
+          
+            background-color: #fff;
+        }
+        .left {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            text-align: center;
+            height: 100%;
+            width: 50%;
+            background-color: #fff;
+            
+        }
+        button {
+            margin-top: 70px;
+            border: #fff;
+           
+        }
+        .button {
+            padding: 20px;
+            color: #fff;
+            background-color: yellowgreen;
+            border-radius: 20px;
+            text-decoration: none;
+            
+        }
+        .button:hover{
+            background-color: rgb(139, 184, 49);
+        }
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            background: linear-gradient(90deg,rgb(142, 91, 223),rgb(140, 104, 207));
+            color: #fff;
+            height: 100%;
+            width: 50%;
+            border-radius: 150px 0 0 100px;
+        }
+        .right:hover {
+            padding-left: 50px;
+            transition: 0.4s;
+            font-size: 1.3em;
+        }
+        .int {
+            border-radius: 10px;
+            margin: 10px;
+            padding: 10px;
+            width: 100%;
+            border: #fff;
+        }
+        .int:active {
+            border: 0.1px 0.1px black;
+        }
+        .left h1 {
+            font-size: 2.2em;
+        }
+    </style>
+</head>
+<body>
+    <section class="full-screen">
+        <div class="conteiners">
+            <div class="left">
+                <form action="#">
+                    <h1>Login</h1>
+                    <div>
+                        <input class="int" type="text" name="name" placeholder="Usuário" required><br>
+                        <input class="int" type="password" placeholder="Password" required>
+                    </div>
+                </form>
+                <div class="button-conteiner">
+                    <button><a class="button" href="#">Visite nosso site</a></button>
+                </div>
+            </div>
+            <div class="right">
+                <h1>Welcome back!</h1>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
